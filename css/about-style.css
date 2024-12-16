@@ -1,0 +1,185 @@
+/* Global Styles */
+body {
+    font-family: 'Montserrat', sans-serif;
+    background-color: #111; /* Dark background */
+    color: #eee; /* Light text color */
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+/* Navigation Menu */
+nav {
+    background-color: #000; /* Dark navigation bar */
+    padding: 20px 0;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    margin: 0 20px;
+}
+
+nav ul li a {
+    color: #ccc; /* Light gray for links */
+    text-decoration: none;
+    font-size: 16px;
+    text-transform: uppercase;
+    transition: color 0.3s ease, transform 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: rgb(255, 115, 0); /* Bright orange on hover */
+    transform: scale(1.1); /* Slight scale effect on hover */
+}
+
+nav ul li a.active {
+    color: rgb(255, 115, 0); /* Active page color */
+}
+
+/* About Section */
+.about-section {
+    padding: 80px 20px;
+    text-align: center;
+    background-color: #1a1a1a; /* Slightly lighter dark background */
+    flex-grow: 1;
+}
+
+.about-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Profile Picture and Layout */
+.profile-wrapper {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 40px;
+}
+
+.profile-picture {
+    position: relative;
+    width: 180px;
+    height: 180px;
+    border-radius: 50%;
+    background-color: #333; /* Dark background for the profile picture */
+    overflow: hidden;
+}
+
+.profile-picture img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+/* About Content and Skills Section */
+.about-layout {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 50px;
+    text-align: left;
+    margin-top: 40px;
+}
+
+.about-content-skills {
+    max-width: 800px;
+}
+
+.about-content h1 {
+    font-size: 32px;
+    color: #fff; /* White text for the name */
+    margin-bottom: 20px;
+}
+
+.about-content p {
+    font-size: 18px;
+    color: #ccc; /* Light gray text */
+    line-height: 1.8;
+    margin-bottom: 20px;
+}
+
+/* Skills, Software, and Hobbies Layout */
+.skills-layout {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.skills-section, .software-section, .hobbies-section {
+    max-width: 100%;
+}
+
+.skills-section h2, .software-section h2, .hobbies-section h2 {
+    font-size: 28px;
+    color: #fff; /* White for section titles */
+    margin-bottom: 10px;
+}
+
+.skills-list, .software-list, .hobbies-list {
+    padding: 0;
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.skills-list li, .software-list li, .hobbies-list li {
+    background-color: #333; /* Dark background for list items */
+    color: #eee; /* Light text for list items */
+    padding: 10px 15px;
+    border-radius: 20px;
+    font-size: 16px;
+}
+
+/* Hover effects for list items to match the accent color */
+.skills-list li:hover, .software-list li:hover, .hobbies-list li:hover {
+    background-color: rgb(255, 115, 0); /* Bright orange hover effect */
+    color: #fff; /* White text on hover */
+}
+
+/* Footer */
+footer {
+    background-color: #000; /* Dark footer background */
+    padding: 40px 20px;
+    text-align: center;
+}
+
+footer p {
+    margin: 0;
+    color: #888; /* Light gray text in the footer */
+}
+
+.social-links {
+    margin-top: 20px;
+}
+
+.social-links a {
+    display: inline-block;
+    margin: 0 10px;
+    transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+.social-links a:hover {
+    transform: scale(1.1);
+}
+
+.social-links img {
+    width: 40px;
+    height: 40px;
+    transition: opacity 0.3s ease;
+}
+
+.social-links a:hover img {
+    opacity: 0.8;
